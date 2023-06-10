@@ -4,62 +4,52 @@ import Dropdown from '../Dropdown'
 import InputText from '../InputText'
 import './Form.css'
 
-export const Form = (props) => {
+export const Form = ({aoCadastrar, times}) => {
 
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')
   const [time, setTime] = useState('')
 
-  const onSave = (evento) => {
+  const aoSubmeter = (evento) => {
     evento.preventDefault()
-    props.aoColaboradorCadastrado({
-      nome,
-      cargo,
-      imagem,
-      time
+    console.log('form enviado', nome, cargo, imagem, time )
+    aoCadastrar({
+        nome,
+        cargo,
+        imagem,
+        time
     })
-    setNome('')
-    setCargo('')
-    setImagem('')
-    setTime('')
   }
 
   return (
-    <section className="form">
-      <form onSubmit={onSave}>
-        <h2>Preencha os dados para criar o card do colaborador:</h2>
-        <InputText 
-          obrigatorio={true}
-          label="Nome"
-          placeholder="Digite seu nome..."
-          value={nome}
-          onChange={value => setNome(value)}
-        />
-        <InputText 
-          obrigatorio={true}
-          label="Cargo"
-          placeholder="Digite seu cargo..."
-          value={cargo}
-          onChange={value => setCargo(value)}
-        />
-        <InputText 
-          label="Imagem" 
-          placeholder="Digite o endereço da imagem..."
-          value={imagem}
-          onChange={value => setImagem(value)}
-        />
-        <Dropdown 
-          obrigatorio={true} 
-          label="Time" 
-          itens={props.times}
-          value={time}
-          onChange={value => setTime(value)}
-        />
-        <Button>
-          Criar card
-        </Button>
-      </form>
+    <section className="formulario-container">
+        <form className="formulario" onSubmit={aoSubmeter}>
+            <h2>Preencha os dados para criar o card do colaborador.</h2>
+            <InputText
+                obrigatorio={true}
+                label='Nome'
+                placeholder='Digite seu nome '
+                valor={nome}
+                aoAlterado={valor => setNome(valor)}/>
+            <InputText
+                obrigatorio={true}
+                label='Cargo' 
+                placeholder='Digite seu cargo '
+                valor={cargo}
+                aoAlterado={valor => setCargo(valor)}/>
+            <InputText 
+                label='Imagem' 
+                placeholder='Informe o endereço da imagem '
+                aoAlterado={valor => setImagem(valor)}/>
+            <Dropdown 
+                obrigatorio={true}
+                label='Times'
+                items={times} 
+                valor={time}
+                aoAlterado={valor => setTime(valor)}/>
+            <Button texto='Criar card' />
+        </form>
     </section>
   )
 }

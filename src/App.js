@@ -1,54 +1,99 @@
 import { useState } from 'react';
 import Banner from './componentes/Banners';
 import Form  from './componentes/Form';
+import Rodape from './componentes/Rodape';
 import Time from './componentes/Time';
-import { Rodape } from './componentes/Rodape/Rodape';
 
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
-  const times = [
+  const [times, setTimes] = useState([
     {
-      nome: 'Gerentes',
-      corPrimaria: '#57C278',
-      corSecundaria: '#D9F7E9'
+      id: uuidv4(),
+      nome: 'Gerencia',
+      cor: '#57C278'
     },
     {
+      id: uuidv4(),
       nome: 'Sistemas',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8'
+      cor: '#82CFFA'
     },
     {
+      id: uuidv4(),
       nome: 'Mobile',
-      corPrimaria: '#FFBA05',
-      corSecundaria: '#FFF5D9'
+      cor: '#FFBA05'
     },
     {
-      nome: 'Estagiários',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF'
+      id: uuidv4(),
+      nome: 'Estágio',
+      cor: '#E06B69'
+    },
+  ])
+
+  const inicial = [
+    {
+      id: uuidv4(),
+      nome: 'ALESSANDRO CORREIA',
+      cargo: 'Analista Sênior',
+      imagem: 'http://github.com/cgrio.png',
+      time: times[0].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'CARLOS MELO',
+      cargo: 'Auxiliar de Programação FullStack',
+      imagem: 'http://github.com/carlos-edu-melo.png',
+      time: times[1].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'JESSICA BARBOSA',
+      cargo: 'Auxiliar de Programação FullStack',
+      imagem: '	http://github.com/jessicalbarbosa.png',
+      time: times[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'IAGO LIMA',
+      cargo: 'Estagiário FullStack',
+      imagem: 'http://github.com/iagoB7ima.png',
+      time: times[3].nome
     }
   ]
 
-  const [colaboradores, setColaboradores] = useState([])
+  const [colaboradores, setColaboradores] = useState(inicial)
 
-  const aoNovoColaboradorAdicionado  = (colaborador) => {
-    setColaboradores([...colaboradores, colaborador])
+  function deletarColaborador(id) {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
+  }
+
+  function mudarCor(cor, id) {
+    setTimes(times.map(time => {
+      if(time.id === id) {
+        time.cor = cor;
+      }
+      return time;
+    }));
   }
 
   return (
-    <div className="App">
+    <div>
       <Banner />
-      <Form times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
+      <Form times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}/>
 
-      {times.map(time => <Time
-        key={time.nome}
-        nome={time.nome}
-        corPrimaria={time.corPrimaria}
-        corSecundaria={time.corSecundaria}
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-      />)}
-
+      <section className="times">
+        <h1>Minha organização</h1>
+        {times.map((time, indice) => 
+          <Time 
+            mudarCor={mudarCor}
+            key={indice}
+            time={time}
+            colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+            aoDeletar={deletarColaborador}
+          />
+        )}
+      </section>
       <Rodape />
     </div>
   );

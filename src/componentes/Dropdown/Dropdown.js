@@ -1,13 +1,11 @@
 import './Dropdown.css'
 
-export const Dropdown = (props) => {
-  return (
-    <div className="dropdown">
-      <label>{props.label}</label>
-      <select onChange={evento => props.onChange(evento.target.value)} required={props.obrigatorio} value={props.value}>
-        <option value=""></option>
-        {props.itens.map(item => <option key={item}>{item}</option>)}
+export const Dropdown = ({label, items,  valor, aoAlterado, obrigatorio = false}) => {
+  return (<div className="lista-suspensa">
+      <label>{label}</label>
+      <select required={obrigatorio} value={valor} onChange={evento => aoAlterado(evento.target.value)}>
+          <option />
+          {items.map(item => <option key={item}>{item}</option>)}
       </select>
-    </div>
-  )
+  </div>)
 }

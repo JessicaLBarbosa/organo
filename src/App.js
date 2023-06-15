@@ -34,6 +34,7 @@ function App() {
   const inicial = [
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'ALESSANDRO CORREIA',
       cargo: 'Analista Sênior',
       imagem: 'http://github.com/cgrio.png',
@@ -41,6 +42,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'CARLOS MELO',
       cargo: 'Auxiliar de Programação FullStack',
       imagem: 'http://github.com/carlos-edu-melo.png',
@@ -48,6 +50,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'JESSICA BARBOSA',
       cargo: 'Auxiliar de Programação FullStack',
       imagem: '	http://github.com/jessicalbarbosa.png',
@@ -55,6 +58,7 @@ function App() {
     },
     {
       id: uuidv4(),
+      favorito: false,
       nome: 'IAGO LIMA',
       cargo: 'Estagiário FullStack',
       imagem: 'http://github.com/iagoB7ima.png',
@@ -82,6 +86,15 @@ function App() {
     }));
   }
 
+  function resolverFavorito(id) {
+    setColaboradores(colaboradores.map(colaborador => {
+      if(colaborador.id === id) {
+        colaborador.favorito = !colaborador.favorito
+      }
+      return colaborador
+    }))
+  }
+
   return (
     <div>
       <Banner />
@@ -95,6 +108,7 @@ function App() {
         <h1>Minha organização</h1>
         {times.map((time, indice) => 
           <Time 
+            aoFavoritar={resolverFavorito}
             mudarCor={mudarCor}
             key={indice}
             time={time}

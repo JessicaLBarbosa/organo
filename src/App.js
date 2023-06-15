@@ -62,6 +62,11 @@ function App() {
     }
   ]
 
+
+  function cadastrarTime(novoTime) {
+    setTimes([ ...times, { ...novoTime, id: uuidv4() }])
+  }
+
   const [colaboradores, setColaboradores] = useState(inicial)
 
   function deletarColaborador(id) {
@@ -80,7 +85,11 @@ function App() {
   return (
     <div>
       <Banner />
-      <Form times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}/>
+      <Form 
+        cadastrarTime={cadastrarTime}
+        times={times.map(time => time.nome)} 
+        aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}
+      />
 
       <section className="times">
         <h1>Minha organização</h1>

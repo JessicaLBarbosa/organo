@@ -4,71 +4,138 @@ import Form  from './componentes/Form';
 import Rodape from './componentes/Rodape';
 import Time from './componentes/Time';
 
-import { v4 as uuidv4 } from 'uuid';
+import { faker } from '@faker-js/faker'
 
 function App() {
 
-  const [times, setTimes] = useState([
-    {
-      id: uuidv4(),
-      nome: 'Gerencia',
-      cor: '#57C278'
-    },
-    {
-      id: uuidv4(),
-      nome: 'Sistemas',
-      cor: '#82CFFA'
-    },
-    {
-      id: uuidv4(),
-      nome: 'Mobile',
-      cor: '#FFBA05'
-    },
-    {
-      id: uuidv4(),
-      nome: 'Estágio',
-      cor: '#E06B69'
-    },
-  ])
+  const [times, setTimes] = useState([{
+    id: faker.string.uuid(),
+    nome: faker.commerce.department(),
+    cor: faker.color.rgb()
+  },
+  {
+    id: faker.string.uuid(),
+    nome: faker.commerce.department(),
+    cor: faker.color.rgb()
+  },
+  {
+    id: faker.string.uuid(),
+    nome: faker.commerce.department(),
+    cor: faker.color.rgb()
+  },
+  {
+    id: faker.string.uuid(),
+    nome: faker.commerce.department(),
+    cor: faker.color.rgb()
+  }])
 
-  const inicial = [
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: 'ALESSANDRO CORREIA',
-      cargo: 'Analista Sênior',
-      imagem: 'http://github.com/cgrio.png',
-      time: times[0].nome
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: 'CARLOS MELO',
-      cargo: 'Auxiliar de Programação FullStack',
-      imagem: 'http://github.com/carlos-edu-melo.png',
-      time: times[1].nome
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: 'JESSICA BARBOSA',
-      cargo: 'Auxiliar de Programação FullStack',
-      imagem: '	http://github.com/jessicalbarbosa.png',
-      time: times[2].nome
-    },
-    {
-      id: uuidv4(),
-      favorito: false,
-      nome: 'IAGO LIMA',
-      cargo: 'Estagiário FullStack',
-      imagem: 'http://github.com/iagoB7ima.png',
-      time: times[3].nome
-    }
-  ]
+  const inicial = [//Time 1
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[0].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[0].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[0].nome
+  },
+
+  //Time 2
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[1].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[1].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[1].nome
+  },
+
+  //Time 3
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[2].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[2].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[2].nome
+  },
+
+  //Time 4
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[3].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[3].nome
+  },
+  {
+    id: faker.string.uuid(),
+    favorito: false,
+    nome: faker.person.fullName(),
+    cargo: faker.person.jobTitle(),
+    imagem: faker.image.avatar(),
+    time: times[3].nome
+  }]
 
 
   function cadastrarTime(novoTime) {
-    setTimes([ ...times, { ...novoTime, id: uuidv4() }])
+    setTimes([ ...times, { ...novoTime, id: faker.string.uuid() }])
   }
 
   const [colaboradores, setColaboradores] = useState(inicial)

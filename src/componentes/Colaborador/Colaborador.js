@@ -13,7 +13,8 @@ export const Colaborador = ({ colaborador, corDeFundo, aoDeletar, aoFavoritar })
     }
 
 
-  return (<div className="colaborador">
+  return (
+    <div className="colaborador">
       <AiFillCloseCircle size={25} className="deletar" onClick={() => aoDeletar(colaborador.id)} />
       <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
           <img src={colaborador.imagem} alt={colaborador.nome} />
@@ -24,7 +25,7 @@ export const Colaborador = ({ colaborador, corDeFundo, aoDeletar, aoFavoritar })
           <div className="favoritar">
             {
                 colaborador.favorito 
-                ? <AiFillHeart {...propsFavorito} color='#ff0000' /> 
+                ? <AiFillHeart {...propsFavorito} color='#f1485b' /> 
                 : <AiOutlineHeart {...propsFavorito} /> 
             }
           </div>

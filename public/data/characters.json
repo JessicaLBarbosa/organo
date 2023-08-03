@@ -1,0 +1,252 @@
+{ "character":
+  [{
+    "id": 1,
+    "favorito": false,
+		"status": true,
+    "nome": "Pike Trickfoot",
+    "cargo": "Gnome - Cleric",
+    "imagem": "imagens/vox_machina/pike.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+  },
+  {
+    "id": 2,
+    "favorito": false,
+		"status": true,
+    "nome": "Grog Strongjaw",
+    "cargo": "Goliath - Barbarian/Fighter",
+    "imagem": "imagens/vox_machina/grog.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+  },
+  {
+    "id": 3,
+    "favorito": false,
+		"status": true,
+    "nome": "Vax'ildan 'Vax' Vessar",
+    "cargo": "Half-Elf - Rogue/Paladin/Druid",
+    "imagem": "imagens/vox_machina/vax.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+  },
+  {
+    "id": 4,
+    "favorito": false,
+		"status":true,
+    "nome": "Vex'ahlia 'Vex' Vessar",
+    "cargo": "Half-Elf - Ranger/Rogue",
+    "imagem": "imagens/vox_machina/vex.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+  },
+  {
+    "id": 5,
+    "favorito": false,
+		"status": true,
+    "nome": "Percival 'Percy' Fredrickstein Von Musel Klossowski de Rolo III",
+    "cargo": "Human - Gunslinger",
+    "imagem": "imagens/vox_machina/percy.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+  },
+  {
+    "id": 6,
+    "favorito": false,
+		"status": true,
+    "nome": "Keyleth of the Air Ashari",
+    "cargo": "Half-Elf - Druid",
+    "imagem": "imagens/vox_machina/keyleth.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+  },
+  {
+    "id": 7,
+    "favorito": false,
+		"status": true,
+    "nome": "Scanlan Shorthalt",
+    "cargo": "Gnome - Bard",
+    "imagem": "imagens/vox_machina/scanlan.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+  },
+	{
+    "id": 8,
+    "favorito": false,
+    "status": false,
+    "nome": "Tiberius Stormwind",
+    "cargo": "Dragonborn - Sorcerer",
+    "imagem": "imagens/vox_machina/scanlan.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+	},
+	{
+    "id": 9,
+    "favorito": false,
+    "status": false,
+    "nome": "Taryon Darrington",
+    "cargo": "Human - Artificer",
+    "imagem": "imagens/vox_machina/scanlan.jpg",
+    "time": "Vox Machina",
+    "historia": ""
+	},
+  {
+    "id": 10,
+    "favorito": false,
+		"status": true,
+    "nome": "Jester Lavorre",
+    "cargo": "Tiefling - Cleric",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+  },
+  {
+    "id": 11,
+    "favorito": false,
+		"status": true,
+    "nome": "Fjord Stone",
+    "cargo": "Half-Orc - Warlock",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+  },
+  {
+    "id": 12,
+    "favorito": false,
+		"status": true,
+    "nome": "Beauregard 'Beau' Lionett",
+    "cargo": "Human - Monk",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+  },
+	{
+    "id": 13,
+    "favorito": false,
+		"status": true,
+    "nome": "Mollymauk 'Molly' Tealeaf",
+    "cargo": "Tiefling - Blood Hunter",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+  },
+	{
+    "id": 14,
+    "favorito": false,
+		"status": false,
+    "nome": "Caduceus Clay",
+    "cargo": "Firbolg - Cleric",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+  },
+	{
+    "id": 15,
+    "favorito": false,
+		"status": true,
+    "nome": "Yasha Nydoorin",
+    "cargo": "Aasimar - Barbarian",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+  },
+	{
+    "id": 16,
+    "favorito": false,
+    "status": true,
+    "nome": "Nott the Brave",
+    "cargo": "Goblin - Rogue",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+	},
+	{
+    "id": 17,
+    "favorito": false,
+    "status": true,
+    "nome": "Caleb Widogast",
+    "cargo": "Human - Wizard",
+    "imagem": "",
+    "time": "The Mighty Nein",
+    "historia": ""
+	},
+  {
+    "id": 18,
+    "favorito": false,
+		"status": true,
+    "nome": "Laudna",
+    "cargo": "Human (Hollow One) - Warlock/Sorcerer",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  },
+  {
+    "id": 19,
+    "favorito": false,
+		"status": true,
+    "nome": "Fearne Calloway",
+    "cargo": "Ruidusborn Faun - Druid",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  },
+  {
+    "id": 20,
+    "favorito": false,
+		"status": true,
+    "nome": "Imogen Temult",
+    "cargo": "Ruidusborn Human - Sorcerer",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  },
+	{
+    "id": 21,
+    "favorito": false,
+		"status": false,
+    "nome": "Sir Bertrand Bell",
+    "cargo": "Human - Fighter",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  },
+	{
+    "id": 22,
+    "favorito": false,
+		"status": true,
+    "nome": "Chetney Pock O'Pea",
+    "cargo": "Gnome - Blood Hunter/Rogue",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  },
+	{
+    "id": 23,
+    "favorito": false,
+		"status": true,
+    "nome": "Orym of the Air Ashari",
+    "cargo": "Halfling - Fighter",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  },
+	{
+    "id": 24,
+    "favorito": false,
+		"status": true,
+    "nome": "Ashton Greymoore",
+    "cargo": "Earth Genasi - Barbarian",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  },
+	{
+    "id": 25,
+    "favorito": false,
+		"status": true,
+    "nome": "Fresh Cut Grass (FCG)",
+    "cargo": "Automaton - Cleric",
+    "imagem": "",
+    "time": "Bells Hells",
+    "historia": ""
+  }
+]}

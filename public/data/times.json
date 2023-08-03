@@ -1,0 +1,22 @@
+{ "party": [{
+    "id": 1,
+    "nome": "Vox Machina",
+    "cor": "#1DB7C2",
+    "imagem": "",
+    "historia": ""
+  },
+  {
+    "id": 2,
+    "nome": "The Mighty Nein",
+    "cor": "#FFDD00",
+    "imagem": "",
+    "historia": ""
+  },
+  {
+    "id": 3,
+    "nome": "Bells Hells",
+    "cor": "#3FC351",
+    "imagem": "",
+    "historia": ""
+  }]
+}

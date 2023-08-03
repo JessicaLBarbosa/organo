@@ -1,8 +1,35 @@
 .banner {
-  background-color: #6278F7;
-  text-align: center;
+  background: #33546d;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.banner img {
-  max-width: 100%;
+.banner ul li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.banner ul li:last-child {
+  margin-right: 32px;
+}
+
+.banner-logo {
+  width: 40%;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #f1485b;
+  border-bottom: 4px solid #f1485b;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.nav-icons {
+  width: 50px;
 }

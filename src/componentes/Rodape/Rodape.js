@@ -1,6 +1,8 @@
 import './Rodape.css'
 
-export const Rodape = () => {
+import React from 'react'
+
+export default function Rodape() {
   return (
     <footer className="footer">
       <section>
@@ -23,7 +25,7 @@ export const Rodape = () => {
           </ul>
       </section>
       <section>
-          <img src="/imagens/logo.png" alt="" />
+          <img src="/imagens/logo.png" alt="" className='footer-logo'/>
       </section>
       <section>
           <p>

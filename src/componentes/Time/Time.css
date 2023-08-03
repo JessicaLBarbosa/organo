@@ -7,7 +7,7 @@
 
 .time h3 {
   font-size: 32px;
-  font-family: 'Prata';
+  font-family: "Prata";
   border-bottom: 4px solid;
   display: inline-block;
   padding-bottom: 8px;
@@ -15,7 +15,7 @@
 
 .time .colaboradores {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 32px;
   flex-wrap: wrap;
 }

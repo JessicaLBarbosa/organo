@@ -1,7 +1,9 @@
 import './Dropdown.css'
 
-export const Dropdown = ({label, items,  valor, aoAlterado, obrigatorio = false}) => {
-  return (<div className="lista-suspensa">
+import React from 'react'
+
+export default function Dropdown({label, items,  valor, aoAlterado, obrigatorio = false}) {
+ return (<div className="lista-suspensa">
       <label>{label}</label>
       <select required={obrigatorio} value={valor} onChange={evento => aoAlterado(evento.target.value)}>
           <option />

@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import Button from '../Button'
-import Dropdown from '../Dropdown'
-import Input from '../Input'
+import Button from '../Button/Button'
+import Dropdown from '../Dropdown/Dropdown'
+import Input from '../Input/Input'
 import './Form.css'
 
-export const Form = ({ aoCadastrar, times, cadastrarTime }) => {
+import React from 'react'
 
+export default function Form({ aoCadastrar, times, cadastrarTime }) {
+  
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')

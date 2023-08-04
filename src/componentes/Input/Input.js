@@ -1,7 +1,9 @@
 import './Input.css'
 
-export const Input = ({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
-  return (
+import React from 'react'
+
+export default function Input({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio = false }) {
+   return (
     <div className={`campo campo-${type}`}>
       <label>{label}</label>
       <input 

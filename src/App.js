@@ -1,13 +1,15 @@
 import { useState } from 'react';
-import Form  from './componentes/Form';
-import Time from './componentes/Time';
+import Form  from './componentes/Form/Form';
+import Time from './componentes/Time/Time';
 import Rodape from './componentes/Rodape/Rodape';
-
-import { faker } from '@faker-js/faker'
 import Banner from './componentes/Banners/Banner';
 
-function App() {
+import { faker } from '@faker-js/faker'
 
+import React from 'react'
+
+export default function App() {
+  
   const [times, setTimes] = useState([
     {
     id: faker.string.uuid(),
@@ -332,4 +334,3 @@ function App() {
   );
 }
 
-export default App;

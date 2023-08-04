@@ -1,0 +1,109 @@
+{
+  "campanhas": [
+    {
+      "1": {
+        "id": 1,
+        "title": "Vox Machina",
+        "players": "imagens/vox_machina/vox_machina_players.png",
+        "characters": "imagens/vox_machina/vox_machina_characters.png",
+        "description": "Campaign One, or The Campaign of Vox Machina, is the first campaign of Critical Role. It follows a group of adventurers, Vox Machina, first in their adventures across the continent of Tal'Dorei and eventually the larger world of Exandria and other Planes of Existence. \n The campaign that became Critical Role began in late 2012, with the players beginning the campaign at level 3. They began streaming on March 12, 2015, when the characters had reached level 9. The on-stream events took place in approximately 810 through 812 PD (Post Divergence). \n The first campaign is broken down into five arcs on stream, with one arc pre-stream, and four special episodes following the completion of the main campaign, all detailed below.",
+        "enredo": [
+          {
+            "id": 1,
+            "title": "Pre_Stream",
+            "description": "The team met in the swamp town of Stilben as a ragtag group of mercenaries in search of work. After doing a few odd jobs they traveled to the city of Emon, where they managed to halt a demonic insurrection within the throne, and gained a reputation as heroes and had a keep built in their honor."
+          },
+          {
+            "id": 2,
+            "title": "Arc 1 - Kraghammer & Vasselheim",
+            "description": "Lady Allura asks Vox Machina to find her friend, Lady Kima, who disappeared into the mines of Kraghammer upon learning of a great evil resting beneath it during a vision quest. After completing their quest, trouble with the law in Vasselheim splits the party into two separate groups as they attempt to make amends, and during their stay, they encounter new friends, new enemies, and new revelations before eventually returning home."
+          },
+          {
+            "id": 4,
+            "title": "Arc 2 - The Briarwoods",
+            "description": "Knowing that they were responsible for the deaths of his family, Percy decides it's time to achieve his vengeance. Following his lead, Vox Machina is accused of destructive behavior and kicked off the Tal'Dorei Council. Now they need to clear their names, but the cost might be Percy's soul."
+          },
+          {
+            "id": 5,
+            "title": "Arc 3 - The Chroma Conclave",
+            "description": "As Sovereign Uriel Tal'Dorei II announces his abdication, four dragons calling themselves the Chroma Conclave attack the city of Emon. After saving whoever they can and resettling them in Whitestone, the members of Vox Machina gather the power of the Vestiges of the Divergence and rally their allies to kill the dragons and take back their home. Raishan, a member of the Chroma Conclave, proposes an alliance with Vox Machina to take down the leader, Thordak, and although the party does not trust her, the dragon's strength and knowledge would be a great asset to them. As Thordak swells with madness and power from his position within Emon, time is running out until the final confrontation with the Cinder King."
+          },
+          {
+            "id": 6,
+            "title": "Arco 4 - Taryon Darringto",
+            "description": "Having taken care of the major threat facing Tal'Dorei and quickly making a new acquaintance, Vox Machina sets out to tie up some loose ends, including the final leg of Keyleth's Aramenté and the ever-present threat of Hotis' return."
+          },
+          {
+            "id": 7,
+            "title": "Arc 6 - Cult of Vecna",
+            "description": "With the return of an old foe leading a band of cultists as they seek to raise the archlich Vecna to godhood. Vox Machina must race against time to stop this new threat as the ascension of Vecna looms ever closer."
+          }
+        ]
+      },
+      "2": {
+        "id": 2,
+        "title": "The Mighty Nein",
+        "players": "imagens/mighty_nein/mighty_nein_players.png",
+        "characters": "imagens/mighty_nein/mighty_nein_characters.png",
+        "description": "Campaign Two is the second campaign of Critical Role. It takes place beginning in Sydenstar, 835 P.D., approximately twenty years after the adventures of Vox Machina. The returning cast plays all-new characters and features the continent of Wildemount as its primary setting. In the eighth episode, the adventuring party adopted the name 'The Mighty Nein'.",
+        "enredo": [
+          {
+            "id": 1,
+            "title": "Arc 1 - Come Together",
+            "description": "Seven disparate individuals first meet by chance in the sleepy town of Trostenwald, but they quickly become involved in an investigation after a zombie attacks the recently arrived traveling carnival. Out of necessity, they come together as a group, calling themselves the Mighty Nein and setting off north. In the aftermath of the attack on the Zauber Spire, they find themselves exploring the underbelly of Zadash, gambling their fates with the Gentleman, and riding across the swamps of Berleben before engaging in merriment and mayhem among the folks of Hupperdook, oblivious to their soon-to-be changing fortunes."
+          },
+          {
+            "id": 2,
+            "title": "Arc 2 - The Bad Guys",
+            "description": "The Mighty Nein scramble to recover those who were lost, and the attempt bears a heavy cost and an unexpected gain. Then, in pursuit of clues as to Fjord's mysterious patron, the party arrives in Nicodranas, the home of Jester. But their respite is short-lived as their adventure sets sail to the seas, where both answers and dangers lurk from above and beneath."
+          },
+          {
+            "id": 3,
+            "title": "Arc 3 - The Bright Queen's Favor",
+            "description": "The Mighty Nein return to the mainland and travel deep into Xhorhas in search of the missing Yeza. Upon finding an 'anchor' to the Abyss, the party earns the favor of the Bright Queen Leylas Kryn. From their new home base in the capital of Rosohna, they continue their search for answers and in the course of their chase, they end up losing one of their own to Obann, a servant of the Chained Oblivion."
+          },
+          {
+            "id": 4,
+            "title": "Arc 4 - Swords and Angels",
+            "description": "The Mighty Nein seeks to free Yasha from Obann's control while Fjord struggles to free himself from Uk'otoa's. Meanwhile, the Angel of Irons cult has their own plans to release their god. Complicating things further, the party finds themselves drawn deeper into the tangled webs of intrigue between the Dwendalian Empire and the Kryn Dynasty with the fates of both territories hanging in the balance."
+          },
+          {
+            "id": 5,
+            "title": "Arc 5 - Family Ties",
+            "description": "With a tentative cease-fire in place, the Mighty Nein make time within their hectic schedules to plan for Traveler Con and to catch up with their own separated families and former friends. Soon after peace is apparently made a reality, the party finally arrives at the long-awaited destination of Rumblecusp for the event that Jester and the Traveler spent half a year preparing for. However, they discover more secrets, oddities, and threats than expected, including the potential loss of their own memories and selves and an even more chilling omen on the horizon."
+          },
+          {
+            "id": 6,
+            "title": "Arc 6 - Weird Magic",
+            "description": "The Mighty Nein pursue a familiar face north to Eiselcross toward the ruins of the ancient magocracy of Aeor. The cold circumstances lead to even colder complications, however, with knowledge of an encroaching threat from the distant past threatening to return: the Somnovem. Armed with this knowledge, the Mighty Nein consolidate their alliances and goals, travel across the land and even the planes, and engage in a desperate race against time that will determine the fate of their home and those they hold dear."
+          }
+        ]
+      },
+      "3": {
+        "id": 2,
+        "title": "Bells Hells",
+        "players": "imagens/bells_hells/bells_hells_players.png",
+        "characters": "imagens/bells_hells/bells_hells_characters.png",
+        "description": "Campaign Three: Bells Hells is the third campaign of Critical Role, which began airing on October 21, 2021. It is set on the continent of Marquet and begins in 843 PD, within a year after the events of Exandria Unlimited Prime.",
+        "enredo": [
+          {
+            "id": 1,
+            "title": "Arc 1 - Jrusar",
+            "description": "Three groups of adventurers, some familiar and some new, meet in the five-spired city of Jrusar and form an alliance initially born of convenience and the desire for knowledge and coin. Quickly, however, they find themselves digging into the city's shadowy mysteries and increasingly fraught tensions."
+          },
+          {
+            "id": 2,
+            "title": "Arc 2 - Ruidus Rising",
+            "description": "Bells Hells leaves Jrusar and the memories of the friends no longer with them to explore the further reaches of Marquet and meet new potential friends and enemies. The Apogee Solstice approaches, bringing with it both new threats and the culmination of ancient plans."
+          },
+          {
+            "id": 3,
+            "title": "Arc 3",
+            "description": "The Apogee Solstice arrives, bringing the culmination of a plan thousands of years in the making, and new challenges and separations for Bells Hells."
+          }
+        ]
+      }
+    },
+    {}
+  ]
+}
